@@ -19,7 +19,6 @@ public class Login extends Pagina {
 		getDriverBase().setCampo("Senha", senha);
 		getDriverBase().clicar("button.btn.btn-primary");
 		return new Home(getDriverBase());
-	}	
-	
+	}		
 
 }
