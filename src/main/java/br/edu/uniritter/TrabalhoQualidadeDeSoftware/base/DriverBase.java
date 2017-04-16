@@ -30,8 +30,8 @@ public class DriverBase {
 		driver.get(urlBase + complemento);
 	}	
 	
-	public void fecharNavegador() {
-		driver.close();
+	public void fechar() {
+		driver.quit();
 	}	
 		
 	public void setCampoById(String campo, String valor) {

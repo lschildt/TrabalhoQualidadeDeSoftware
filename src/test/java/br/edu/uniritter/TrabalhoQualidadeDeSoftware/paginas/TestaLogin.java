@@ -1,6 +1,7 @@
 package br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,4 +25,9 @@ public class TestaLogin {
         assertTrue(home.isValida());
     }
 
+    @After
+    public void tearDown() throws Exception {
+    	driverBase.fechar();;
+    }        
+    
 }

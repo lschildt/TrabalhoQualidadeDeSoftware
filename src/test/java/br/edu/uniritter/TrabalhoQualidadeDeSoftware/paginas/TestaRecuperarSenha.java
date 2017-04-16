@@ -2,6 +2,7 @@ package br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -21,5 +22,10 @@ public class TestaRecuperarSenha {
     	RecuperarSenha recuperarSenha = new RecuperarSenha(driverBase);
     	assertTrue(recuperarSenha.acessar().informarEmail("leandro.schildt@gmail.com").isSucesso());
     }    
-    
+
+    @After
+    public void tearDown() throws Exception {
+    	driverBase.fechar();;
+    }        
+        
 }
