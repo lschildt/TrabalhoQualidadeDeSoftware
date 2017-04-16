@@ -27,7 +27,7 @@ public class TestaAjuda {
     
     @After
     public void tearDown() throws Exception {
-    	driverBase.fechar();;
+    	driverBase.fechar();
     }        
         
 
