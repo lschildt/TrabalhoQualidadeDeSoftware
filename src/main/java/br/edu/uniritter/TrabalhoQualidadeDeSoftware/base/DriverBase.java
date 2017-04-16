@@ -34,21 +34,31 @@ public class DriverBase {
 		driver.close();
 	}	
 		
-	public void setCampo(String campo, String valor) {
+	public void setCampoById(String campo, String valor) {
 		driver.findElement(By.id(campo)).clear();
 	    driver.findElement(By.id(campo)).sendKeys(valor);
 	}
+
+	public void setCampoByName(String campo, String valor) {
+		driver.findElement(By.name(campo)).clear();
+	    driver.findElement(By.name(campo)).sendKeys(valor);
+	}
 	
-	public WebElement encontrarElementoPorClassName(String valor) {		 
+	
+	public WebElement localizarElementoPorClassName(String valor) {		 
 		return driver.findElement(By.className(valor));
 	}
 
-	public WebElement encontrarElementoPorCssSelector(String valor) {		 
+	public WebElement localizarElementoPorCssSelector(String valor) {		 
 		return driver.findElement(By.cssSelector(valor));
 	}	
 	
-	public WebElement encontrarElementoPorLinkText(String valor) {
+	public WebElement localizarElementoPorLinkText(String valor) {
 		return driver.findElement(By.linkText(valor));
+	}
+
+	public WebElement localizarElementoPorXPath(String valor) {
+		return driver.findElement(By.xpath(valor));
 	}	
 	
 }

@@ -10,16 +10,21 @@ public class Home extends Pagina {
 	}
 	
     public NovoPaciente novoPaciente() {
-        getDriverBase().encontrarElementoPorLinkText("Novo paciente").click();        
+        getDriverBase().localizarElementoPorLinkText("Novo paciente").click();        
         return new NovoPaciente(getDriverBase());
     }		
-	
+
+	public Ajuda ajuda() {
+        getDriverBase().localizarElementoPorLinkText("Ajuda").click();        
+        return new Ajuda(getDriverBase());
+	}	    
+    
 	public boolean isValida() {
 		return existeBarraDeNavegacao();
 	}
 	 
 	private boolean existeBarraDeNavegacao() {
-		return getDriverBase().encontrarElementoPorClassName("navbar") != null;
-	}	 
+		return getDriverBase().localizarElementoPorClassName("navbar") != null;
+	}
 
 }

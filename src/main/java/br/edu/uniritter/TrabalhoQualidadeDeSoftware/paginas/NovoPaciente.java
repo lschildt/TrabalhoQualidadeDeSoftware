@@ -10,9 +10,9 @@ public class NovoPaciente extends Pagina {
 	}
 	
 	public HomePaciente cadastrar(String nome) {
-	    getDriverBase().setCampo("Nome", nome);	    
-	    getDriverBase().encontrarElementoPorCssSelector("label.radio-inline").click();
-	    getDriverBase().encontrarElementoPorCssSelector("button.btn.btn-primary").click();						
+	    getDriverBase().setCampoById("Nome", nome);	    
+	    getDriverBase().localizarElementoPorCssSelector("label.radio-inline").click();
+	    getDriverBase().localizarElementoPorCssSelector("button.btn.btn-primary").click();						
 		return new HomePaciente(getDriverBase());
 	}		
 	

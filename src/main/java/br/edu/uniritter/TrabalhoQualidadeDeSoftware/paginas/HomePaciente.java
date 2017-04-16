@@ -14,7 +14,7 @@ public class HomePaciente extends Pagina {
 	}
 	 
 	private boolean existeBotaoAlterarPaciente() {
-		return getDriverBase().encontrarElementoPorClassName("navbar") != null;
+		return getDriverBase().localizarElementoPorClassName("navbar") != null;
 	}	 		
 
 }
