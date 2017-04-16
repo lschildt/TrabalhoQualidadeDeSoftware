@@ -17,7 +17,7 @@ public class Login extends Pagina {
 	public Home logar(String usuario, String senha) {
 		getDriverBase().setCampo("Email", usuario);
 		getDriverBase().setCampo("Senha", senha);
-		getDriverBase().clicar("button.btn.btn-primary");
+		getDriverBase().encontrarElementoPorCssSelector("button.btn.btn-primary").click();;
 		return new Home(getDriverBase());
 	}		
 

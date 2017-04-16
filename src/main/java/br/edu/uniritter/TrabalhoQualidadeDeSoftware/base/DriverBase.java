@@ -39,13 +39,16 @@ public class DriverBase {
 	    driver.findElement(By.id(campo)).sendKeys(valor);
 	}
 	
-	public void clicar(String identificador) {
-		driver.findElement(By.cssSelector(identificador)).click();
+	public WebElement encontrarElementoPorClassName(String valor) {		 
+		return driver.findElement(By.className(valor));
 	}
 
-	public WebElement encontrarElementoPorClasse(String nome) {		 
-		return driver.findElement(By.className(nome));
-	}
-
+	public WebElement encontrarElementoPorCssSelector(String valor) {		 
+		return driver.findElement(By.cssSelector(valor));
+	}	
+	
+	public WebElement encontrarElementoPorLinkText(String valor) {
+		return driver.findElement(By.linkText(valor));
+	}	
 	
 }

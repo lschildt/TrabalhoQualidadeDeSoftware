@@ -8,7 +8,7 @@ import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Home;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Login;
 
-public class TestaLogin {
+public class TestaNovoPaciente {
 	
 	DriverBase driverBase;
     
@@ -18,10 +18,12 @@ public class TestaLogin {
     }
     
     @Test
-    public void loginDeveTerSucesso() {                	
+    public void deveCadastrarNovoPaciente() {                	
     	Login login = new Login(driverBase);
-    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "bolero");
-        assertTrue(home.isValida());
+    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "bolero");    	
+    	NovoPaciente novoPaciente = home.novoPaciente();    	
+    	HomePaciente homePaciente = novoPaciente.cadastrar("Paciente Selenium " + System.currentTimeMillis());
+        assertTrue(homePaciente.isValida());
     }
 
 }

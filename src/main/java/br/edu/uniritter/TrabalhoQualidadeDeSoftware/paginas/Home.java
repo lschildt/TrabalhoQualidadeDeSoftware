@@ -9,12 +9,17 @@ public class Home extends Pagina {
 		super(driverBase);
 	}
 	
+    public NovoPaciente novoPaciente() {
+        getDriverBase().encontrarElementoPorLinkText("Novo paciente").click();        
+        return new NovoPaciente(getDriverBase());
+    }		
+	
 	public boolean isValida() {
 		return existeBarraDeNavegacao();
 	}
 	 
 	private boolean existeBarraDeNavegacao() {
-		return getDriverBase().encontrarElementoPorClasse("navbar") != null;
+		return getDriverBase().encontrarElementoPorClassName("navbar") != null;
 	}	 
 
 }
