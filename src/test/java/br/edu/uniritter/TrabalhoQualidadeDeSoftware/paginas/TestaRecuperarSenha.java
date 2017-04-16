@@ -10,6 +10,20 @@ import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 
 public class TestaRecuperarSenha {
 
+/*
+
+	Funcionalidade: Recuperar senha
+	
+	Como usuário do sistema
+	Necessito recuperar minha senha
+	Para acessar o sistema
+			
+	Cenário: No formulário de recuperação de senha
+	  Quando informo e-mail e clico em enviar instruções:
+	  Então vejo a mensagem "Instruções enviadas com sucesso!".
+
+*/	
+	
 	DriverBase driverBase;
     
     @Before

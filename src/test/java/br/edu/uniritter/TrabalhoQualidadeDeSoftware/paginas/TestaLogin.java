@@ -9,6 +9,21 @@ import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Home;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Login;
 
+/*
+ 
+	Funcionalidade: Acesso ao sistema
+	
+	Como usuário do sistema
+	Quero me logar
+	Para administrar o sistema
+			
+	Cenário: Login de usuário
+	  Quando insiro os dados no formulário a clico no botão entrar:
+	  Então vejo a página principal com a listagem de pacientes.
+
+*/
+
+
 public class TestaLogin {
 	
 	DriverBase driverBase;

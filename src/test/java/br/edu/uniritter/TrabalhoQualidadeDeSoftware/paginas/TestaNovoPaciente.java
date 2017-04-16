@@ -11,6 +11,23 @@ import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Login;
 
 public class TestaNovoPaciente {
 	
+	
+/*
+	 
+	Funcionalidade: Cadastro de novo paciente
+	
+	Como usuário do sistema
+	Quero inserir um novo paciente
+	Para gerenciar seus tratamentos
+			
+	Cenário: Cadastro de novo paciente
+	  Quando insiro os dados no formulário a clico no botão salvar:
+	  Então vejo a página principal de administração do paciente.
+
+*/
+	
+	
+	
 	DriverBase driverBase;
     
     @Before

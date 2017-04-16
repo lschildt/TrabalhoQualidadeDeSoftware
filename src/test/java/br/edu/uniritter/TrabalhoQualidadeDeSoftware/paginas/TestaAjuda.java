@@ -8,6 +8,20 @@ import org.junit.Test;
 
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 
+/*
+
+	Funcionalidade: Solicitação de ajuda através de formulário
+	
+	Como usuário do sistema
+	Quero solicitar ajuda 
+	Para sanar dúvidas do sistema
+			
+	Cenário: Solicitar ajuda através do formulário
+	  Quando insiro os dados no formulário a clico no botão enviar:
+	  Então vejo a mensagem de Sucesso.
+
+*/
+
 public class TestaAjuda {
 	
 	DriverBase driverBase;

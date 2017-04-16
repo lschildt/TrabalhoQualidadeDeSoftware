@@ -9,7 +9,21 @@ import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Home;
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.paginas.Login;
 
-public class TestaHomePaciente {
+/*
+ 
+	Funcionalidade: Visualização da pagina de administração do paciente
+	
+	Como usuário do sistema
+	Necessito acessar a página de administração do paciente
+	Para gerenciar os dados do paciente
+			
+	Cenário: Visualizar página de administração do paciente
+	  Quando abro a listagem de paciente e clico no botão abrir de um paciente:
+	  Então vejo a página de administração do paciente.
+
+*/
+
+public class TestaHomePaciente {	
 	
 	DriverBase driverBase;
     
