@@ -7,7 +7,7 @@ public class HomePaciente extends Pagina {
 
 	public HomePaciente(DriverBase driverBase) {
 		super(driverBase);
-	}
+	}		
 
 	public boolean isValida() {
 		return existeBotaoAlterarPaciente();

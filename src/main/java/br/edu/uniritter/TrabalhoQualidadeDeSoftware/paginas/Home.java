@@ -18,6 +18,11 @@ public class Home extends Pagina {
         getDriverBase().localizarElementoPorLinkText("Ajuda").click();        
         return new Ajuda(getDriverBase());
 	}	    
+	
+	public HomePaciente abrirHomePaciente() {		
+        getDriverBase().localizarElementoPorCssSelector("i.fa.fa-file").click();        
+        return new HomePaciente(getDriverBase());
+	}
     
 	public boolean isValida() {
 		return existeBarraDeNavegacao();
