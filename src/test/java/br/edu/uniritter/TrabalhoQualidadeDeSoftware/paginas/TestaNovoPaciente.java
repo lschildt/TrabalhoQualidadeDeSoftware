@@ -20,7 +20,7 @@ public class TestaNovoPaciente {
     @Test
     public void deveCadastrarNovoPaciente() {                	
     	Login login = new Login(driverBase);
-    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "bolero");    	
+    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "12345");    	
     	NovoPaciente novoPaciente = home.novoPaciente();    	
     	HomePaciente homePaciente = novoPaciente.cadastrar("Paciente Selenium " + System.currentTimeMillis());
         assertTrue(homePaciente.isValida());

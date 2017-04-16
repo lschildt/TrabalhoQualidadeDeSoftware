@@ -7,8 +7,8 @@ import org.junit.Test;
 
 import br.edu.uniritter.TrabalhoQualidadeDeSoftware.base.DriverBase;
 
-public class TestaAjuda {
-	
+public class TestaRecuperarSenha {
+
 	DriverBase driverBase;
     
     @Before
@@ -17,11 +17,9 @@ public class TestaAjuda {
     }
     
     @Test
-    public void deveEnviarFormularioDeAjuda() {                	
-    	Login login = new Login(driverBase);
-    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "12345");    	
-    	Ajuda ajuda = home.ajuda();
-        assertTrue(ajuda.enviar("Leandro", "leandro.schildt@gmail.com", "Mensagem de teste.").isValida());
-    }
-
+    public void deveEnviarSolicitacaoDeAlteracaoDeSenha() {                	
+    	RecuperarSenha recuperarSenha = new RecuperarSenha(driverBase);
+    	assertTrue(recuperarSenha.acessar().informarEmail("leandro.schildt@gmail.com").isSucesso());
+    }    
+    
 }

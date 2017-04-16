@@ -20,7 +20,7 @@ public class TestaLogin {
     @Test
     public void loginDeveTerSucesso() {                	
     	Login login = new Login(driverBase);
-    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "bolero");
+    	Home home = login.acessar().logar("leandro.schildt@gmail.com", "12345");
         assertTrue(home.isValida());
     }
 
